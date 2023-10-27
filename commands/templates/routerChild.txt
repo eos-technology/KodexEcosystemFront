@@ -1,0 +1,5 @@
+{
+    path: '{{page}}',
+    name: '{{page}}',
+    component: () => import ('@/modules/{{module}}/views/{{page}}/Index.vue')
+}
