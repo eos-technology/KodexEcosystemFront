@@ -1,3 +1,22 @@
 {
-  "message": "hello i18n !!"
+  "routes": {
+    "dashboard": "Dashboard",
+    "wallet": "Wallet",
+    "posSystem": "POS system",
+    "remittances": "Remittances",
+    "mass": "Mass shipments",
+    "humanResources": "Human Resources",
+    "p2p": "P2P"
+  },
+  "wallet": {
+    "selectRed": "Select network",
+    "receive": "Receive",
+    "deposit": "To deposit",
+    "address": "Address",
+    "link": "Link to share",
+    "copy": "Copy",
+    "share": "Share",
+    "amount": "Amount",
+    "chain": "Binance Smart Chain"
+  }
 }

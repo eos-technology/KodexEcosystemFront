@@ -1,3 +1,22 @@
 {
-  "message": "hello i18n !!"
+  "routes": {
+    "dashboard": "Panel de control",
+    "wallet": "Billetera",
+    "posSystem": "Sistema POS",
+    "remittances": "Remesas",
+    "mass": "Envios masivos",
+    "humanResources": "Recursos humanos",
+    "p2p": "P2P"
+  },
+  "wallet": {
+    "selectRed": "Seleccionar red",
+    "receive": "Recibir",
+    "deposit": "Depositar",
+    "address": "Dirección",
+    "link": "Link para compartir",
+    "copy": "Copiar",
+    "share": "Compartir",
+    "amount": "Cantidad",
+    "chain": "Cadena inteligente de Binance"
+  }
 }

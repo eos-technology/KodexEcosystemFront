@@ -49,13 +49,30 @@
     <v-switch density="compact" hide-details color="primary" inset label="Switch"></v-switch>
 
     <v-text-field
+      class="inpt inpt-search"
+      elevation-0
+      density="compact"
+      hide-details
+      type="search"
+      variant="solo-filled"
+      placeholder="Search"
+    >
+      <template v-slot:prepend-inner>
+        <v-icon>
+          <img src="@/assets/svg/search.svg" alt="" />
+        </v-icon>
+      </template>
+    </v-text-field>
+
+    <v-text-field
       class="inpt"
       elevation-0
       density="compact"
       hide-details
       label="Label"
       variant="solo-filled"
-    ></v-text-field>
+    >
+    </v-text-field>
 
     <v-select
       class="inpt"
