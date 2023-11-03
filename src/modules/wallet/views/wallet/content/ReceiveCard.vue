@@ -1,5 +1,5 @@
 <template>
-  <v-card class="pa-6 rounded-xl w-auto elevation-1 bg-white">
+  <v-card max-width="456" class="pa-6 rounded-xl w-auto elevation-1 bg-white mx-auto">
     <!-- Header Card -->
     <h4 class="text-h4 font-weight-bold mb-2">{{ $t('wallet.receive') }}</h4>
 
@@ -61,12 +61,17 @@
       </v-window-item>
     </v-window>
   </v-card>
+  <RecentTransactions v-if="tab === 'one'" />
+  <RecentTransactionsDeposit v-if="tab === 'two'" />
 </template>
 
 <script lang="ts" setup>
 import { ref } from 'vue'
 import ReceiveTab from './tabs/ReceiveTab.vue'
 import DepositTab from './tabs/DepositTab.vue'
+import RecentTransactions from './RecentTransactions.vue'
+import RecentTransactionsDeposit from './RecentTransactionsDeposit.vue'
+
 const tab = ref(null)
 const selectedRadio = ref(null)
 </script>

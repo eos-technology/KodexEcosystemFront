@@ -23,9 +23,8 @@
             </template>
           </v-text-field>
           <v-btn
-            :type="visible ? 'text' : 'password'"
-            :icon="visible ? 'mdi-eye-off-outline' : 'mdi-eye-outline'"
-            @click:append-inner="visible = !visible"
+            :icon="hide ? 'mdi-eye-off' : 'mdi-eye'"
+            @click="hide = !hide"
             size="44"
             rounded="lg"
             color="secondary"
@@ -34,20 +33,67 @@
           ></v-btn>
         </article>
         <!-- Cards -->
-        <CardsCrypto title="TRX / TRON" amount="0.000090" value="$0.0000" icon="tron" />
-        <CardsCrypto title="BTC / BITCOIN" amount="0.000090" value="$0.0000" icon="btc" />
-        <CardsCrypto title="TRX / TRON" amount="0.000090" value="$0.0000" icon="tron" />
-        <CardsCrypto title="BNB / BINANCE" amount="0.000090" value="$0.0000" icon="tron" />
-        <CardsCrypto title="BTC / BITCOIN" amount="0.000090" value="$0.0000" icon="btc" />
-        <CardsCrypto title="BNB / BINANCE" amount="0.000090" value="$0.0000" icon="bnb" />
-        <CardsCrypto title="USDT / TETHER USD" amount="0.000090" value="$0.0000" icon="usdt" />
-        <CardsCrypto title="USDT / TETHER USD" amount="0.000090" value="$0.0000" icon="usdt" />
-        <CardsCrypto title="XRP / XRP" amount="0.000090" value="$0.0000" icon="xrp" />
-        <CardsCrypto title="XRP / XRP" amount="0.000090" value="$0.0000" icon="xrp" />
+        <CardsCrypto
+          title="TRX / TRON"
+          amount="0.000090"
+          value="$0.0000"
+          icon="tron"
+          :hide="!hide"
+        />
+        <CardsCrypto
+          title="BTC / BITCOIN"
+          amount="0.000090"
+          value="$0.0000"
+          icon="btc"
+          :hide="!hide"
+        />
+        <CardsCrypto
+          title="TRX / TRON"
+          amount="0.000090"
+          value="$0.0000"
+          icon="tron"
+          :hide="!hide"
+        />
+        <CardsCrypto
+          title="BNB / BINANCE"
+          amount="0.000090"
+          value="$0.0000"
+          icon="tron"
+          :hide="!hide"
+        />
+        <CardsCrypto
+          title="BTC / BITCOIN"
+          amount="0.000090"
+          value="$0.0000"
+          icon="btc"
+          :hide="!hide"
+        />
+        <CardsCrypto
+          title="BNB / BINANCE"
+          amount="0.000090"
+          value="$0.0000"
+          icon="bnb"
+          :hide="!hide"
+        />
+        <CardsCrypto
+          title="USDT / TETHER USD"
+          amount="0.000090"
+          value="$0.0000"
+          icon="usdt"
+          :hide="!hide"
+        />
+        <CardsCrypto
+          title="USDT / TETHER USD"
+          amount="0.000090"
+          value="$0.0000"
+          icon="usdt"
+          :hide="!hide"
+        />
+        <CardsCrypto title="XRP / XRP" amount="0.000090" value="$0.0000" icon="xrp" :hide="!hide" />
+        <CardsCrypto title="XRP / XRP" amount="0.000090" value="$0.0000" icon="xrp" :hide="!hide" />
       </v-col>
       <v-col lg="9">
-        <ReceiveCard max-width="456" class="mx-auto" />
-        <RecentTransactions />
+        <ReceiveCard />
       </v-col>
     </v-row>
   </v-card>
@@ -57,6 +103,5 @@ import { ref } from 'vue'
 import BalanceCard from './content/BalanceCard.vue'
 import CardsCrypto from './content/CardsCrypto.vue'
 import ReceiveCard from './content/ReceiveCard.vue'
-import RecentTransactions from './content/RecentTransactions.vue'
-const visible = ref(false)
+const hide = ref(false)
 </script>

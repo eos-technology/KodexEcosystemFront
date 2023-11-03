@@ -17,6 +17,11 @@
     "copy": "Copiar",
     "share": "Compartir",
     "amount": "Cantidad",
-    "chain": "Cadena inteligente de Binance"
+    "chain": "Cadena inteligente de Binance",
+    "detailReceive": "Detalle recibir",
+    "idOrder": "ID de pedido",
+    "binanceSmart": "Cadena inteligente Binance BEP20",
+    "qrReceive": "Recibir QR",
+    "detailDeposit": "Detalle depósito"
   }
 }

@@ -1,6 +1,6 @@
 import { reactive } from 'vue';
 <template>
-  <v-card class="bg-background overflow-auto">
+  <div class="bg-background h-full">
     <v-layout>
       <v-navigation-drawer
         class="bg-background"
@@ -32,26 +32,37 @@ import { reactive } from 'vue';
             :key="route.value"
             :title="$t(`routes.${route.name}`)"
             :value="route.value"
+            rounded="lg"
           >
             <template v-slot:prepend>
               <v-icon>
-                <img :src="`src/assets/svg/${route.icon}.svg`" :alt="`${route.name} Icon`" />
+                <img
+                  :src="
+                    getFile({
+                      route: 'svg',
+                      url: `${route.icon}`,
+                      extension: 'svg'
+                    })
+                  "
+                  :alt="`${route.icon}`"
+                />
               </v-icon>
             </template>
           </v-list-item>
         </v-list>
       </v-navigation-drawer>
-      <v-main class="h-screen h-100"
+      <v-main class="main"
         ><section class="pa-4">
           <HeaderComponent />
           <RouterView /></section
       ></v-main>
     </v-layout>
-  </v-card>
+  </div>
 </template>
 
 <script setup lang="ts">
 import { ref } from 'vue'
+import getFile from '@/helpers/getFile'
 import HeaderComponent from '@/components/ui/HeaderComponent.vue'
 
 const drawer = ref(true)
@@ -59,13 +70,21 @@ const rail = ref(true)
 
 const routes = [
   { name: 'dashboard', value: 'dashboard', icon: 'dashboard', route: 'Dashboard' },
-  { name: 'wallet', value: 'wallet', icon: 'wallet', route: 'wallet' },
-  { name: 'posSystem', value: 'pos', icon: 'pos' },
-  { name: 'p2p', value: 'p2p', icon: 'p2p' },
-  { name: 'remittances', value: 'remittances', icon: 'cart' },
-  { name: 'mass', value: 'send', icon: 'doc' },
-  { name: 'humanResources', value: 'resources', icon: 'doc' }
+  { name: 'wallet', value: 'wallet', icon: 'wallet', route: 'wallet' }
+  // { name: 'posSystem', value: 'pos', icon: 'pos' },
+  // { name: 'p2p', value: 'p2p', icon: 'p2p' },
+  // { name: 'remittances', value: 'remittances', icon: 'cart' },
+  // { name: 'mass', value: 'send', icon: 'doc' },
+  // { name: 'humanResources', value: 'resources', icon: 'doc' }
 ]
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.main {
+  min-height: 100vh;
+  height: 100%;
+}
+.v-list-item--active {
+  background-color: #3587ff;
+}
+</style>

@@ -17,6 +17,11 @@
     "copy": "Copy",
     "share": "Share",
     "amount": "Amount",
-    "chain": "Binance Smart Chain"
+    "chain": "Binance Smart Chain",
+    "detailReceive": "Detail receive",
+    "idOrder": "Order ID",
+    "binanceSmart": "Binance Smarth Chain BEP20",
+    "qrReceive": "Receive QR",
+    "detailDeposit": "Deposit detail"
   }
 }

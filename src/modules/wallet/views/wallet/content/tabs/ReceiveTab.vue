@@ -1,7 +1,7 @@
 <template>
   <img class="d-block mb-8 mx-auto" src="@/assets/svg/qr.svg" alt="" />
   <div class="mb-8">
-    <label for="address">
+    <label for="address" @click="showModal = true">
       <p class="text-body-2 text-grey-darken-1">{{ $t('wallet.address') }}</p>
       <v-text-field
         class="inpt"
@@ -40,9 +40,16 @@
       </template>
     </v-text-field>
   </label>
+  <v-dialog v-model="showModal">
+    <QrDirection min-width="456" class="mx-auto" @close-modal="showModal = false" />
+  </v-dialog>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import { ref } from 'vue'
+import QrDirection from '../QrDirection.vue'
+const showModal = ref(false)
+</script>
 
 <style lang="scss" scoped>
 i {

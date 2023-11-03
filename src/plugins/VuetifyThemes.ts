@@ -8,7 +8,7 @@ export const light: ThemeDefinition = {
     primary: '#0A1E8C',
     'primary-darken-1': '#001E62',
     icon: '#EBF3FF',
-    secondary: '#FFFFFF',
+    secondary: '#F6F8FA',
     'secondary-darken-1': '#018786',
     error: '#FF6156',
     info: '#3587FF',
