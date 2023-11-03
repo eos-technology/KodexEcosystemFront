@@ -1,9 +1,9 @@
 import { reactive } from 'vue';
 <template>
-  <div class="bg-background h-full">
+  <div class="main-color bg-background h-full">
     <v-layout>
       <v-navigation-drawer
-        class="bg-background"
+        class="bg-background d-none d-md-flex"
         v-model="drawer"
         :rail="rail"
         permanent
@@ -52,9 +52,11 @@ import { reactive } from 'vue';
         </v-list>
       </v-navigation-drawer>
       <v-main class="main"
-        ><section class="pa-4">
+        ><section>
           <HeaderComponent />
-          <RouterView /></section
+          <div class="pa-md-4">
+            <RouterView />
+          </div></section
       ></v-main>
     </v-layout>
   </div>
@@ -83,8 +85,22 @@ const routes = [
 .main {
   min-height: 100vh;
   height: 100%;
+  &-color {
+    @media (max-width: 960px) {
+      background-color: #f6f8fa !important;
+      --v-layout-left: 0 !;
+    }
+  }
 }
 .v-list-item--active {
   background-color: #3587ff;
+}
+</style>
+
+<style>
+.main {
+  @media (max-width: 960px) {
+    --v-layout-left: 0 !important;
+  }
 }
 </style>

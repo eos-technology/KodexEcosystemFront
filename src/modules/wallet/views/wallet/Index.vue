@@ -1,5 +1,5 @@
 <template>
-  <v-card class="pa-6 rounded-xl">
+  <v-card class="pa-4 pa-md-6 rounded-xl">
     <v-row>
       <v-col lg="3">
         <BalanceCard class="mb-6" />
