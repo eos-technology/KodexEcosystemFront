@@ -46,7 +46,7 @@
 
   <v-card-text class="d-flex justify-space-between align-center">
     <div>
-      <p class="text-body-2 text-primary font-weight-medium">Cantidad a recibir</p>
+      <p class="text-body-2 text-primary font-weight-medium">{{ $t('wallet.amountReceive') }}</p>
       <h5 class="text-h5 text-primary-darken-1 font-weight-bold">0.000090</h5>
     </div>
     <div class="d-flex flex-column align-end">
@@ -54,7 +54,9 @@
     </div>
   </v-card-text>
   <v-card-actions>
-    <v-btn class="btn bg-primary w-100"><p>Enviar</p></v-btn>
+    <v-btn class="btn bg-primary w-100"
+      ><p>{{ $t('wallet.send') }}</p></v-btn
+    >
   </v-card-actions>
 </template>
 

@@ -1,6 +1,6 @@
 <template>
   <v-card class="bg-white pa-6 rounded-xl mt-8"
-    ><h5 class="text-h5 font-weight-bold">Transacciones recientes</h5>
+    ><h5 class="text-h5 font-weight-bold">{{ $t('wallet.recentTransactions') }}</h5>
     <div class="grid">
       <CardTransactions icon="tron" title="TRX / TRON" value="0.000090" date="10/10/2023" deposit />
       <CardTransactions icon="tron" title="TRX / TRON" value="0.000090" date="10/10/2023" deposit />

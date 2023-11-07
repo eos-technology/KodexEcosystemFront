@@ -22,6 +22,15 @@
     "idOrder": "ID de pedido",
     "binanceSmart": "Cadena inteligente Binance BEP20",
     "qrReceive": "Recibir QR",
-    "detailDeposit": "Detalle depósito"
+    "detailDeposit": "Detalle depósito",
+    "dashboard": "Panel",
+    "wallet": "Billetera",
+    "amountReceive": "Cantidad a recibir",
+    "send": "Enviar",
+    "totalBalance": "Saldo total",
+    "network": "Red",
+    "allReady": "Todo listo",
+    "receiveSuccess": "Se recibió exitosamente",
+    "recentTransactions": "Transacciones recientes"
   }
 }

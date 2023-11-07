@@ -19,11 +19,13 @@
       @click="show = false"
       :to="{ name: 'Dashboard' }"
       ><img class="mr-2" src="@/assets/svg/dashboard-blue.svg" alt="" />
-      <p class="font-weight-bold text-primary-darken-1">Dashboard</p></router-link
+      <p class="font-weight-bold text-primary-darken-1">
+        {{ $t('wallet.dashboard') }}
+      </p></router-link
     >
     <router-link class="d-flex text-decoration-none" @click="show = false" :to="{ name: 'wallet' }"
       ><img class="mr-2" src="@/assets/svg/wallet-blue.svg" alt="" />
-      <p class="font-weight-bold text-primary-darken-1">Wallet</p></router-link
+      <p class="font-weight-bold text-primary-darken-1">{{ $t('wallet.wallet') }}</p></router-link
     >
   </section>
 </template>

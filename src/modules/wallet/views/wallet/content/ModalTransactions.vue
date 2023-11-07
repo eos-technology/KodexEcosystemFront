@@ -86,7 +86,7 @@
       </div>
       <div class="mb-4">
         <label for="red">
-          <p class="text-body-2 text-grey-darken-1">Red</p>
+          <p class="text-body-2 text-grey-darken-1">{{ $t('wallet.network') }}</p>
           <v-text-field
             class="inpt"
             elevation-0
@@ -111,9 +111,9 @@
 
     <div class="text-center">
       <img src="@/assets/svg/check.svg" alt="" />
-      <h5 class="text-h5 text-primary font-weight-bold">Todo listo</h5>
+      <h5 class="text-h5 text-primary font-weight-bold">{{ $t('wallet.allReady') }}</h5>
       <p class="text-subtitle-1 text-primary-darken-1 font-weight-medium">
-        Se recibió exitosamente
+        {{ $t('wallet.receiveSuccess') }}
       </p>
     </div>
   </v-card>

@@ -68,9 +68,9 @@
 
     <div class="text-center">
       <img src="@/assets/svg/check.svg" alt="" />
-      <h5 class="text-h5 text-primary font-weight-bold">Todo listo</h5>
+      <h5 class="text-h5 text-primary font-weight-bold">{{ $t('wallet.allReady') }}</h5>
       <p class="text-subtitle-1 text-primary-darken-1 font-weight-medium">
-        Se recibió exitosamente
+        {{ $t('wallet.receiveSuccess') }}
       </p>
     </div>
   </v-card>

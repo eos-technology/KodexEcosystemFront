@@ -2,7 +2,7 @@
   <v-card class="balance pa-6 rounded-xl"
     ><v-card-text class="d-flex justify-space-between align-center"
       ><div>
-        <p class="text-body-2 text-white">Saldo total</p>
+        <p class="text-body-2 text-white">{{ $t('wallet.totalBalance') }}</p>
         <h4 class="text-h4 text-white">$0.0000</h4>
         <p class="text-body-1 text-white">$0.000 / USDT</p>
       </div>

@@ -22,6 +22,15 @@
     "idOrder": "Order ID",
     "binanceSmart": "Binance Smarth Chain BEP20",
     "qrReceive": "Receive QR",
-    "detailDeposit": "Deposit detail"
+    "detailDeposit": "Deposit detail",
+    "dashboard": "Dashboard",
+    "wallet": "Wallet",
+    "amountReceive": "Amount to receive",
+    "send": "Send",
+    "totalBalance": "Total balance",
+    "network": "Network",
+    "allReady": "All ready",
+    "receiveSuccess": "Received successfully",
+    "recentTransactions": "Recent transactions"
   }
 }
